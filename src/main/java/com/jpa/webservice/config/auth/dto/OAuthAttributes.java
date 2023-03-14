@@ -29,6 +29,7 @@ public class OAuthAttributes {
         if("naver".equals(registrationId)){
             return ofNaver("id",attributes);
         }
+        // 구글은 userNameAttributeName = sub
         return ofGoogle(userNameAttributeName,attributes);
     }
 
